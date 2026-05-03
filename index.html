@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Learning Zone: Mind Improvement Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Main Hub Menu -->
+        <section id="hub-screen" class="screen">
+            <header class="hub-header">
+                <h1>AB'S GAME ZONE</h1>
+                <p>EXPLORE & LEARN</p>
+            </header>
+            
+            <div class="game-cards">
+                <div class="game-card science-card" id="start-science">
+                    <div class="card-icon">🧪</div>
+                    <h3>SCIENCE LAB</h3>
+                    <div class="card-badge">Logic</div>
+                </div>
+                <div class="game-card detective-card" id="start-detective">
+                    <div class="card-icon">🔍</div>
+                    <h3>CATCH THE DIFFERENCE</h3>
+                    <div class="card-badge">Visual IQ</div>
+                </div>
+            </div>
+
+            <footer class="hub-footer">
+                <div class="nav-pill">⭐ <span id="total-stars">9029</span></div>
+                <div class="nav-pill">🏆 AWARDS</div>
+                <div class="nav-pill">📈 PROGRESS</div>
+            </footer>
+        </section>
+
+        <!-- Game Screens -->
+        <section id="game-screen" class="screen hidden">
+            <header class="game-header">
+                <button class="back-btn" id="back-to-hub">🏠</button>
+                <div class="game-title" id="active-game-title">Game Title</div>
+                <div class="game-stats">
+                    <span id="level-display">Level 1</span>
+                    <span id="score-display">⭐ 0</span>
+                </div>
+            </header>
+
+            <main id="game-board">
+                <!-- Game content injected here -->
+            </main>
+
+            <footer class="game-footer">
+                <button class="tool-btn" id="btn-refresh">🔄</button>
+                <button class="tool-btn" id="btn-hint">💡</button>
+            </footer>
+        </section>
+
+        <!-- Overlays -->
+        <div id="win-overlay" class="overlay hidden">
+            <div class="overlay-content">
+                <div class="confetti">✨</div>
+                <h2>Amazing!</h2>
+                <p>You did a great job!</p>
+                <button id="next-btn" class="btn primary-btn">Play Next!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
